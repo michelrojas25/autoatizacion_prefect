@@ -10,7 +10,7 @@ deployment = Deployment.build_from_flow(
     name="Pipeline Seguros con TensorFlow Programado",
     schedule=IntervalSchedule(interval=timedelta(minutes=30)),  # Ejecutar cada 5 minutos
     parameters={
-        "csv_path": "./data_synthetic.csv",
+        "csv_path": "./data/data_synthetic.csv",
         "batch_size": 1000
     },
     infrastructure=Process(),
